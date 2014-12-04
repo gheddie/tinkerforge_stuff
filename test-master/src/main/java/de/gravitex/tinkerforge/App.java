@@ -17,19 +17,14 @@ public class App {
 		try {
 			new BrickTester().test();
 		} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (AlreadyConnectedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (NotConnectedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (TimeoutException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block

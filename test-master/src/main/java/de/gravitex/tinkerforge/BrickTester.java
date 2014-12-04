@@ -15,8 +15,12 @@ public class BrickTester {
 		IPConnection conn = new IPConnection();
 		BrickMaster master = new BrickMaster("6wwtEr", conn);
 		conn.connect("localhost", 4223);
-		System.out.println(master.getStackVoltage());
-		Thread.sleep(5000);
+		System.out.println("brick at " + master.getStackVoltage() + " volt...");
+		for (int i=5;i>=0;i--) {
+			Thread.sleep(1000);
+			System.out.println(i + "...");
+		}
+		System.out.println("resetting...");
 		master.reset();
 		conn.disconnect();
 	}
